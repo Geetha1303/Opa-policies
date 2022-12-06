@@ -1,4 +1,4 @@
-package terraform2
+package terraform
 
 import input.tfplan as tfplan
 
