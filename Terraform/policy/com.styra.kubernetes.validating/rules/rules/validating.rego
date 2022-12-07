@@ -1,6 +1,9 @@
 package policy["com.styra.kubernetes.validating"].rules.rules
 
-
+enforce[decision] {
+  #title: test
+  host_process[decision]
+}
 host_process[decision] {
 hostProcess := input.spec.securityContext.windowsOptions.hostProcess
 
@@ -11,3 +14,5 @@ decision := {
 "message": msg
 }
 }
+  
+
